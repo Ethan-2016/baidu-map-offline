@@ -19,7 +19,7 @@
   "types": "types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dafrok/vue-baidu-map.git"
+    "url": "git+https://github.com/Ethan-2016/baidu-map-offline.git"
   },
   "keywords": [
     "vue",
@@ -29,12 +29,12 @@
     "baidu",
     "map"
   ],
-  "author": "Dafrok <o.o@mug.dog>",
+  "author": "Ethan-2016",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Dafrok/vue-baidu-map-offline/issues"
+    "url": "https://github.com/Ethan-2016/baidu-map-offline/issues"
   },
-  "homepage": "https://github.com/Dafrok/vue-baidu-map-offline#readme",
+  "homepage": "https://github.com/Ethan-2016/baidu-map-offline#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",

@@ -175,7 +175,7 @@ export default {
           isValid = false
         }
       }
-      const url = 'https://github.com/Dafrok/vue-baidu-map-offline/issues/new?title=' + encodeURIComponent(data.title) + '&body=' + encodeURIComponent(content)
+      const url = 'https://github.com/Ethan-2016/vue-baidu-map-offline/issues/new?title=' + encodeURIComponent(data.title) + '&body=' + encodeURIComponent(content)
       isValid ? global.open(url) : openDialog('dialog')
     }
   },

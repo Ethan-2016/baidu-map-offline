@@ -19,8 +19,8 @@ after_success:
   - cp ./docs/favicon.png ./dist/
   - cd dist
   - git init
-  - git config user.name "Dafrok"
-  - git config user.email "o.o@mug.dog"
+  - git config user.name "ethan-2016"
+  - git config user.email "ethan-2016@outlook.com"
   - git add .
   - git commit -m "Travis build docs"
-  - git push  --force --quiet "https://${GITHUB_TOKEN}@github.com/Dafrok/vue-baidu-map-offline.git" master:gh-pages
+  - git push  --force --quiet "https://${GITHUB_TOKEN}@github.com/Ethan-2016/baidu-map-offline.git" master:gh-pages
