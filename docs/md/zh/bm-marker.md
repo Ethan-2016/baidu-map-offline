@@ -52,9 +52,9 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-marker :position="{lng: 116.404, lat: 39.915}" :dragging="true" animation="BMAP_ANIMATION_BOUNCE">
-      <bm-label content="我爱北京天安门" :labelStyle="{color: 'red', fontSize : '24px'}" :offset="{width: -35, height: 30}"/>
-    </bm-marker>
+    <bm-offline-marker :position="{lng: 116.404, lat: 39.915}" :dragging="true" animation="BMAP_ANIMATION_BOUNCE">
+      <bm-offline-label content="我爱北京天安门" :labelStyle="{color: 'red', fontSize : '24px'}" :offset="{width: -35, height: 30}"/>
+    </bm-offline-marker>
   </baidu-map-offline>
 </template>
 ```
@@ -62,9 +62,9 @@
 #### 预览
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-marker :position="markerPoint" :dragging="true" animation="BMAP_ANIMATION_BOUNCE">
-      <bm-label content="我爱北京天安门" :labelStyle="{color: '#f33', fontSize : '12px'}" :offset="{width: -35, height: 30}"/>
-    </bm-marker>
+    <bm-offline-marker :position="markerPoint" :dragging="true" animation="BMAP_ANIMATION_BOUNCE">
+      <bm-offline-label content="我爱北京天安门" :labelStyle="{color: '#f33', fontSize : '12px'}" :offset="{width: -35, height: 30}"/>
+    </bm-offline-marker>
   </baidu-map-offline>
 </doc-preview>
 
@@ -75,7 +75,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-marker :position="markerPoint" :dragging="true" animation="BMAP_ANIMATION_BOUNCE" :icon="{url: 'http://developer.baidu.com/map/jsdemo/img/fox.gif', size: {width: 300, height: 157}}"></bm-marker>
+    <bm-offline-marker :position="markerPoint" :dragging="true" animation="BMAP_ANIMATION_BOUNCE" :icon="{url: 'http://developer.baidu.com/map/jsdemo/img/fox.gif', size: {width: 300, height: 157}}"></bm-offline-marker>
   </baidu-map-offline>
 </template>
 ```
@@ -83,7 +83,7 @@
 #### 预览
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-marker :position="markerPoint" :icon="markerIcon"></bm-marker>
+    <bm-offline-marker :position="markerPoint" :icon="markerIcon"></bm-offline-marker>
   </baidu-map-offline>
 </doc-preview>
 </template>
@@ -95,9 +95,9 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-marker :position="markerPoint" :dragging="true" @click="infoWindowOpen">
-      <bm-info-window :show="show" @close="infoWindowClose" @open="infoWindowOpen">我爱北京天安门</bm-info-window>
-    </bm-marker>
+    <bm-offline-marker :position="markerPoint" :dragging="true" @click="infoWindowOpen">
+      <bm-offline-info-window :show="show" @close="infoWindowClose" @open="infoWindowOpen">我爱北京天安门</bm-offline-info-window>
+    </bm-offline-marker>
   </baidu-map-offline>
 </template>
 
@@ -123,9 +123,9 @@ export default {
 #### 预览
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-marker :position="{lng: 116.404, lat: 39.915}" :dragging="true" @click="infoWindowOpen">
-      <bm-info-window :show="infoWindow.show" @close="infoWindowClose" @open="infoWindowOpen">我爱北京天安门</bm-info-window>
-    </bm-marker>
+    <bm-offline-marker :position="{lng: 116.404, lat: 39.915}" :dragging="true" @click="infoWindowOpen">
+      <bm-offline-info-window :show="infoWindow.show" @close="infoWindowClose" @open="infoWindowOpen">我爱北京天安门</bm-offline-info-window>
+    </bm-offline-marker>
   </baidu-map-offline>
 </doc-preview>
 

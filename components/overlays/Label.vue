@@ -4,7 +4,7 @@ import bindEvents from '../base/bindEvent.js'
 import {createPoint, createSize} from '../base/factory.js'
 
 export default {
-  name: 'bm-label',
+  name: 'bm-offline-label',
   render () {},
   mixins: [commonMixin('overlay')],
   props: {

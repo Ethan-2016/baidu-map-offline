@@ -33,7 +33,7 @@
 ```html
 <template>
 <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="11">
-  <bm-driving start="天安门" end="百度大厦" @searchcomplete="handleSearchComplete" :panel="false" :autoViewport="true"></bm-driving>
+  <bm-offline-driving start="天安门" end="百度大厦" @searchcomplete="handleSearchComplete" :panel="false" :autoViewport="true"></bm-offline-driving>
   <bml-lushu
     @stop="reset"
     :path="path"
@@ -77,7 +77,7 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="11">
-    <bm-driving start="天安门" end="百度大厦" @searchcomplete="handleSearchComplete" :panel="false" :autoViewport="true"></bm-driving>
+    <bm-offline-driving start="天安门" end="百度大厦" @searchcomplete="handleSearchComplete" :panel="false" :autoViewport="true"></bm-offline-driving>
     <bml-lushu
       @start="changeBtnText('pause')"
       @stop="changeBtnText('play_arrow')"

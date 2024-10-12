@@ -10,7 +10,7 @@ import {isPoint, getPosition} from '../base/util.js'
 import commonMixin from '../base/mixins/common.js'
 
 export default {
-  name: 'bm-driving',
+  name: 'bm-offline-driving',
   mixins: [commonMixin('search')],
   props: {
     location: {

@@ -34,9 +34,9 @@
 ```html
 <template>
 <baidu-map-offline>
-  <bm-view class="map">
-  </bm-view>
-  <bm-bus keyword="331" :auto-viewport="true" location="北京"></bm-bus>
+  <bm-offline-view class="map">
+  </bm-offline-view>
+  <bm-offline-bus keyword="331" :auto-viewport="true" location="北京"></bm-offline-bus>
 </baidu-map-offline>
 </template>
 ```
@@ -44,9 +44,9 @@
 #### 预览
 <doc-preview>
   <baidu-map-offline>
-    <bm-view class="map">
-    </bm-view>
-    <bm-bus keyword="331" :auto-viewport="true" location="北京"></bm-bus>
+    <bm-offline-view class="map">
+    </bm-offline-view>
+    <bm-offline-bus keyword="331" :auto-viewport="true" location="北京"></bm-offline-bus>
   </baidu-map-offline>
 </doc-preview>
 </template>

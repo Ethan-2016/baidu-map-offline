@@ -3,7 +3,7 @@ import commonMixin from '../base/mixins/common.js'
 import {createSize} from '../base/factory.js'
 
 export default {
-  name: 'bm-copyright',
+  name: 'bm-offline-copyright',
   render () {},
   mixins: [commonMixin('control')],
   props: ['anchor', 'offset', 'copyright'],

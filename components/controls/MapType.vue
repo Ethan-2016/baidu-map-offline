@@ -3,7 +3,7 @@ import commonMixin from '../base/mixins/common.js'
 import {createSize} from '../base/factory.js'
 
 export default {
-  name: 'bm-map-type',
+  name: 'bm-offline-map-type',
   render () {},
   mixins: [commonMixin('control')],
   props: ['type', 'mapTypes', 'anchor', 'offset'],

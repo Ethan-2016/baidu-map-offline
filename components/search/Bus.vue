@@ -9,7 +9,7 @@ import {isPoint} from '../base/util.js'
 import commonMixin from '../base/mixins/common.js'
 
 export default {
-  name: 'bm-bus',
+  name: 'bm-offline-bus',
   mixins: [commonMixin('search')],
   props: {
     location: {

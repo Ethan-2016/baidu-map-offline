@@ -20,7 +20,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" center="北京">
-    <bm-map-type :map-types="['BMAP_NORMAL_MAP', 'BMAP_HYBRID_MAP']" anchor="BMAP_ANCHOR_TOP_LEFT"></bm-map-type>
+    <bm-offline-map-type :map-types="['BMAP_NORMAL_MAP', 'BMAP_HYBRID_MAP']" anchor="BMAP_ANCHOR_TOP_LEFT"></bm-offline-map-type>
   </baidu-map-offline>
 </template>
 ```
@@ -29,6 +29,6 @@
 
 <doc-preview>
   <baidu-map-offline class="map" center="北京">
-    <bm-map-type :map-types="['BMAP_NORMAL_MAP', 'BMAP_HYBRID_MAP']" anchor="BMAP_ANCHOR_TOP_LEFT"></bm-map-type>
+    <bm-offline-map-type :map-types="['BMAP_NORMAL_MAP', 'BMAP_HYBRID_MAP']" anchor="BMAP_ANCHOR_TOP_LEFT"></bm-offline-map-type>
   </baidu-map-offline>
 </doc-preview>

@@ -4,7 +4,7 @@ import bindEvents from '../base/bindEvent.js'
 import {createPoint, createIconSequence} from '../base/factory.js'
 
 export default {
-  name: 'bm-polyline',
+  name: 'bm-offline-polyline',
   render () {},
   mixins: [commonMixin('overlay')],
   props: {

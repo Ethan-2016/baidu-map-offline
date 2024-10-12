@@ -21,7 +21,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" center="北京">
-    <bm-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-navigation>
+    <bm-offline-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-offline-navigation>
   </baidu-map-offline>
 </template>
 ```
@@ -29,7 +29,7 @@
 #### Preview
 <doc-preview>
   <baidu-map-offline class="map" center="北京">
-    <bm-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-navigation>
+    <bm-offline-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-offline-navigation>
   </baidu-map-offline>
 </doc-preview>
   

@@ -38,15 +38,15 @@
 ```html
 <template>
   <baidu-map-offline>
-    <bm-view class="map">
-    </bm-view>
-    <bm-driving
+    <bm-offline-view class="map">
+    </bm-offline-view>
+    <bm-offline-driving
       start="新街口"
       end="新街口"
       startCity="北京"
       endCity="南京"
       :auto-viewport="true"
-      :waypoints="['呼和浩特', {lng: 112.53, lat: 37.87}, '陕西兵马俑']"></bm-driving>
+      :waypoints="['呼和浩特', {lng: 112.53, lat: 37.87}, '陕西兵马俑']"></bm-offline-driving>
   </baidu-map-offline>
 </template>
 ```
@@ -55,15 +55,15 @@
 
 <doc-preview>
 <baidu-map-offline>
-  <bm-view class="map">
-  </bm-view>
-  <bm-driving
+  <bm-offline-view class="map">
+  </bm-offline-view>
+  <bm-offline-driving
     start="新街口"
     end="新街口"
     startCity="北京"
     endCity="南京"
     :auto-viewport="true"
-    :waypoints="['呼和浩特', {lng: 112.53, lat: 37.87}, '陕西兵马俑']"></bm-driving>
+    :waypoints="['呼和浩特', {lng: 112.53, lat: 37.87}, '陕西兵马俑']"></bm-offline-driving>
 </baidu-map-offline>
 </doc-preview>
 
@@ -74,9 +74,9 @@
 ```html
 <template>
   <baidu-map-offline>
-    <bm-view class="map">
-    </bm-view>
-    <bm-driving
+    <bm-offline-view class="map">
+    </bm-offline-view>
+    <bm-offline-driving
       start="天通苑北"
       end="宋家庄地铁站"
       :auto-viewport="true"
@@ -84,7 +84,7 @@
       :panel="false"
       location="北京"
       :waypoints="['西二旗']">
-    </bm-driving>
+    </bm-offline-driving>
   </baidu-map-offline>
 </template>
 ```
@@ -101,9 +101,9 @@
   </md-button>
 </div>
 <baidu-map-offline>
-  <bm-view class="map">
-  </bm-view>
-  <bm-driving :panel="false" start="天通苑北" end="宋家庄地铁站" :auto-viewport="true" location="北京" :policy="policy" :waypoints="['西二旗']"></bm-driving>
+  <bm-offline-view class="map">
+  </bm-offline-view>
+  <bm-offline-driving :panel="false" start="天通苑北" end="宋家庄地铁站" :auto-viewport="true" location="北京" :policy="policy" :waypoints="['西二旗']"></bm-offline-driving>
 </baidu-map-offline>
 </doc-preview>
 </template>

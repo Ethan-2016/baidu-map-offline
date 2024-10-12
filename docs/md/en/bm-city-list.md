@@ -25,7 +25,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" class="map" style="height: 500px" center="北京">
-    <bm-city-list anchor="BMAP_ANCHOR_TOP_LEFT"></bm-city-list>
+    <bm-offline-city-list anchor="BMAP_ANCHOR_TOP_LEFT"></bm-offline-city-list>
   </baidu-map-offline>
 </template>
 ```
@@ -34,6 +34,6 @@
 
 <doc-preview>
   <baidu-map-offline class="map" class="map" style="height: 500px" center="北京">
-    <bm-city-list anchor="BMAP_ANCHOR_TOP_LEFT"></bm-city-list>
+    <bm-offline-city-list anchor="BMAP_ANCHOR_TOP_LEFT"></bm-offline-city-list>
   </baidu-map-offline>
 </doc-preview>

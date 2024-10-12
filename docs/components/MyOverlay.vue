@@ -1,5 +1,5 @@
 <template lang="pug">
-bm-overlay(ref="customOverlay"
+bm-offline-overlay(ref="customOverlay"
   :class="{sample: true, active}"
   pane="labelPane"
   @draw="draw")

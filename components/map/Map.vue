@@ -11,7 +11,7 @@ import bindEvents from '../base/bindEvent.js'
 import {checkType} from '../base/util.js'
 
 export default {
-  name: 'bm-map',
+  name: 'bm-offline-map',
   props: {
     ak: {
       type: String
@@ -216,7 +216,7 @@ export default {
       }
       let $el = this.$refs.view
       for (let $node of this.$slots.default || []) {
-        if ($node.componentOptions && $node.componentOptions.tag === 'bm-view') {
+        if ($node.componentOptions && $node.componentOptions.tag === 'bm-offline-view') {
           this.hasBmView = true
           $el = $node.elm
         }
@@ -247,31 +247,33 @@ export default {
       this.BMapOffline = BMapOffline
       this.init(BMapOffline)
     },
-    getMapScript () {
-      if (!global.BMapOffline) {
-        const ak = this.ak || this._BMapOffline().ak
-        global.BMapOffline = {}
-        global.BMapOffline._preloader = new Promise((resolve, reject) => {
-          global._initBaiduMapOffline = function () {
-            resolve(global.BMapOffline)
-            global.document.body.removeChild($script)
-            global.BMapOffline._preloader = null
-            global._initBaiduMapOffline = null
-          }
-          const $script = document.createElement('script')
-          global.document.body.appendChild($script)
-          $script.src = `https://api.map.baidu.com/api?v=2.0&ak=${ak}&callback=_initBaiduMapOffline`
-        })
-        return global.BMapOffline._preloader
-      } else if (!global.BMapOffline._preloader) {
-        return Promise.resolve(global.BMapOffline)
-      } else {
-        return global.BMapOffline._preloader
-      }
-    },
+    // getMapScript () {
+    //   if (!global.BMapOffline) {
+    //     const ak = this.ak || this._BMapOffline().ak
+    //     global.BMapOffline = {}
+    //     global.BMapOffline._preloader = new Promise((resolve, reject) => {
+    //       global._initBaiduMapOffline = function () {
+    //         resolve(global.BMapOffline)
+    //         global.document.body.removeChild($script)
+    //         global.BMapOffline._preloader = null
+    //         global._initBaiduMapOffline = null
+    //       }
+    //       const $script = document.createElement('script')
+    //       global.document.body.appendChild($script)
+    //       $script.src = `https://api.map.baidu.com/api?v=2.0&ak=${ak}&callback=_initBaiduMapOffline`
+    //     })
+    //     return global.BMapOffline._preloader
+    //   } else if (!global.BMapOffline._preloader) {
+    //     return Promise.resolve(global.BMapOffline)
+    //   } else {
+    //     return global.BMapOffline._preloader
+    //   }
+    // },
     reset () {
-      const {getMapScript, initMap} = this
-      getMapScript()
+      const {
+        // getMapScript, 
+        initMap} = this
+      // getMapScript()
         .then(initMap)
     }
   },

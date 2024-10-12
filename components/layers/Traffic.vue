@@ -2,7 +2,7 @@
 import commonMixin from '../base/mixins/common.js'
 
 export default {
-  name: 'bm-triffic',
+  name: 'bm-offline-triffic',
   render (h) {},
   mixins: [commonMixin('layer')],
   props: {

@@ -17,10 +17,10 @@
   @mousemove="syncPolyline"
   @click="paintPolyline"
   @rightclick="newPolyline">
-  <bm-control>
+  <bm-offline-control>
     <button @click="toggle('polyline')">{{ polyline.editing ? '停止绘制' : '开始绘制' }}</button>
-  </bm-control>
-  <bm-polyline :path="path" v-for="path of polyline.paths"></bm-polyline>
+  </bm-offline-control>
+  <bm-offline-polyline :path="path" v-for="path of polyline.paths"></bm-offline-polyline>
 </baidu-map-offline>
 
 <script>
@@ -89,10 +89,10 @@ export default {
   @mousemove="syncPolyline"
   @click="paintPolyline"
   @rightclick="newPolyline">
-  <bm-control>
+  <bm-offline-control>
     <md-button class="md-raised md-primary" @click="toggle('polyline')">{{ polyline.editing ? '停止绘制' : '开始绘制' }}</md-button>
-  </bm-control>
-  <bm-polyline :path="path" v-for="path of polyline.paths"></bm-polyline>
+  </bm-offline-control>
+  <bm-offline-polyline :path="path" v-for="path of polyline.paths"></bm-offline-polyline>
 </baidu-map-offline>
 
 <script>

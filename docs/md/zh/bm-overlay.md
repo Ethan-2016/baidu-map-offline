@@ -23,14 +23,14 @@
 
 ```html
 <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-  <bm-overlay
+  <bm-offline-overlay
     pane="labelPane"
     :class="{sample: true, active}"
     @draw="draw"
     @mouseover.native="active = true"
     @mouseleave.native="active = false">
     <div>我爱北京天安门</div>
-  </bm-overlay>
+  </bm-offline-overlay>
 </baidu-map-offline>
 
 <script>
@@ -74,14 +74,14 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-overlay
+    <bm-offline-overlay
       pane="labelPane"
       :class="{sample: true, active}"
       @draw="draw"
       @mouseover.native="active = true"
       @mouseleave.native="active = false">
       <div>我爱北京天安门</div>
-    </bm-overlay>
+    </bm-offline-overlay>
   </baidu-map-offline>
 </doc-preview>
 
@@ -93,13 +93,13 @@ export default {
 
 ```html
 <template>
-  <bm-overlay
+  <bm-offline-overlay
     ref="customOverlay"
     :class="{sample: true, active}"
     pane="labelPane"
     @draw="draw">
     <div v-text="text" @click="handleClick"></div>
-  </bm-overlay>
+  </bm-offline-overlay>
 </template>
 
 <script>
@@ -181,7 +181,7 @@ export default {
 
 <doc-preview>
   <baidu-map-offline :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-view class="map"></bm-view>
+    <bm-offline-view class="map"></bm-offline-view>
     <my-overlay
       :position="{lng: position.lng, lat: position.lat}"
       text="点击我"

@@ -36,13 +36,13 @@
 
 ```html
 <baidu-map-offline :center="{lng: 116.403765, lat: 39.914850}" :zoom="11">
-  <bm-view class="map"></bm-view>
-  <bm-control :offset="{width: '10px', height: '10px'}">
-    <bm-auto-complete v-model="keyword" :sugStyle="{zIndex: 1}">
+  <bm-offline-view class="map"></bm-offline-view>
+  <bm-offline-control :offset="{width: '10px', height: '10px'}">
+    <bm-offline-auto-complete v-model="keyword" :sugStyle="{zIndex: 1}">
       <search-field placeholder="请输入地名关键字"></search-field> <!-- 这里指代一个自定义搜索框组件 -->
-    </bm-auto-complete>
-  </bm-control>
-  <bm-local-search :keyword="keyword" :auto-viewport="true" ></bm-local-search>
+    </bm-offline-auto-complete>
+  </bm-offline-control>
+  <bm-offline-local-search :keyword="keyword" :auto-viewport="true" ></bm-offline-local-search>
 </baidu-map-offline>
 
 <script>
@@ -60,13 +60,13 @@ export default {
 
 <doc-preview>
 <baidu-map-offline :center="{lng: 116.403765, lat: 39.914850}" :zoom="11">
-  <bm-view class="map"></bm-view>
-  <bm-control :offset="{width: 10, height: 10}">
-    <bm-auto-complete v-model="keyword" :sugStyle="{zIndex: 1}">
+  <bm-offline-view class="map"></bm-offline-view>
+  <bm-offline-control :offset="{width: 10, height: 10}">
+    <bm-offline-auto-complete v-model="keyword" :sugStyle="{zIndex: 1}">
       <text-field placeholder="关键词"></text-field>
-    </bm-auto-complete>
-  </bm-control>
-  <bm-local-search :keyword="keyword" :auto-viewport="true" ></bm-local-search>
+    </bm-offline-auto-complete>
+  </bm-offline-control>
+  <bm-offline-local-search :keyword="keyword" :auto-viewport="true" ></bm-offline-local-search>
 </baidu-map-offline>
 </doc-preview>
 </template>

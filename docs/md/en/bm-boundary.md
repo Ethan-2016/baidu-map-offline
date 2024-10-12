@@ -2,7 +2,7 @@
 
 # Boundary
 
-The `BmBoundary` component rendered by and inherits from the` bm-polygon` component.
+The `BmBoundary` component rendered by and inherits from the` bm-offline-polygon` component.
 
 ## Instance Properties
 
@@ -38,7 +38,7 @@ The `BmBoundary` component rendered by and inherits from the` bm-polygon` compon
 
 ```html
 <baidu-map-offline class="map" :center="{lng: 116.403765, lat: 39.914850}" :zoom="11">
-  <bm-boundary name="北京市海淀区" :strokeWeight="2" strokeColor="blue"></bm-boundary>
+  <bm-offline-boundary name="北京市海淀区" :strokeWeight="2" strokeColor="blue"></bm-offline-boundary>
 </baidu-map-offline>
 ```
 
@@ -47,7 +47,7 @@ The `BmBoundary` component rendered by and inherits from the` bm-polygon` compon
 <doc-preview>
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 109.49384, lat: 26.84204}" :zoom="11">
-    <bm-boundary :name="name" :strokeWeight="2" strokeColor="blue"></bm-boundary>
+    <bm-offline-boundary :name="name" :strokeWeight="2" strokeColor="blue"></bm-offline-boundary>
   </baidu-map-offline>
   <md-table>
     <md-table-header>

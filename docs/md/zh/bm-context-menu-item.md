@@ -23,12 +23,12 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="center" :zoom="zoom">
-    <bm-context-menu>
-      <bm-context-menu-item :callback="gotoBeijing" text="去北京"></bm-context-menu-item>
-      <bm-context-menu-item :callback="gotoShanghai" text="去上海" iconUrl="http://lbsyun.baidu.com/skins/MySkin/resources/img/red.png"></bm-context-menu-item>
-      <bm-context-menu-item seperator></bm-context-menu-item>
-      <bm-context-menu-item disabled text="去深圳"></bm-context-menu-item>
-    </bm-context-menu>
+    <bm-offline-context-menu>
+      <bm-offline-context-menu-item :callback="gotoBeijing" text="去北京"></bm-offline-context-menu-item>
+      <bm-offline-context-menu-item :callback="gotoShanghai" text="去上海" iconUrl="http://lbsyun.baidu.com/skins/MySkin/resources/img/red.png"></bm-offline-context-menu-item>
+      <bm-offline-context-menu-item seperator></bm-offline-context-menu-item>
+      <bm-offline-context-menu-item disabled text="去深圳"></bm-offline-context-menu-item>
+    </bm-offline-context-menu>
   </baidu-map-offline>
 </template>
 
@@ -65,12 +65,12 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :center="center" :zoom="zoom">
-    <bm-context-menu>
-      <bm-context-menu-item :callback="gotoBeijing" text="去北京"></bm-context-menu-item>
-      <bm-context-menu-item :callback="gotoShanghai" text="去上海" iconUrl="http://lbsyun.baidu.com/skins/MySkin/resources/img/red.png"></bm-context-menu-item>
-      <bm-context-menu-item seperator></bm-context-menu-item>
-      <bm-context-menu-item disabled text="去深圳"></bm-context-menu-item>
-    </bm-context-menu>
+    <bm-offline-context-menu>
+      <bm-offline-context-menu-item :callback="gotoBeijing" text="去北京"></bm-offline-context-menu-item>
+      <bm-offline-context-menu-item :callback="gotoShanghai" text="去上海" iconUrl="http://lbsyun.baidu.com/skins/MySkin/resources/img/red.png"></bm-offline-context-menu-item>
+      <bm-offline-context-menu-item seperator></bm-offline-context-menu-item>
+      <bm-offline-context-menu-item disabled text="去深圳"></bm-offline-context-menu-item>
+    </bm-offline-context-menu>
   </baidu-map-offline>
 </doc-preview>
 </template>

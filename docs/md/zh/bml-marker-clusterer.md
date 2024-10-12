@@ -22,7 +22,7 @@
 <template>
 <baidu-map-offline class="map" center="中国">
   <bml-marker-clusterer :averageCenter="true">
-    <bm-marker v-for="marker of markers" :position="{lng: marker.lng, lat: marker.lat}"></bm-marker>
+    <bm-offline-marker v-for="marker of markers" :position="{lng: marker.lng, lat: marker.lat}"></bm-offline-marker>
   </bml-marker-clusterer>
 </baidu-map-offline>
 </template>
@@ -54,7 +54,7 @@ export default {
 <doc-preview>
 <baidu-map-offline class="map" center="中国" :scroll-wheel-zoom="true" :double-click-zoom="true">
   <bml-marker-clusterer :averageCenter="true" :styles="styles">
-    <bm-marker v-for="marker of markers" :position="{lng: marker.lng, lat: marker.lat}" @dragend="updateMarker($event, marker)" :dragging="true"></bm-marker>
+    <bm-offline-marker v-for="marker of markers" :position="{lng: marker.lng, lat: marker.lat}" @dragend="updateMarker($event, marker)" :dragging="true"></bm-offline-marker>
   <bml-marker-clusterer>
 </baidu-map-offline>
 <md-button class="md-raised md-primary" @click="addMarker">添加一个随机点</md-button>

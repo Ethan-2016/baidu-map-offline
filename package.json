@@ -1,6 +1,6 @@
 {
   "name": "bmap-offline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Baidu Map Offline Component for Vue 2.0",
   "main": "index.js",
   "directories": {

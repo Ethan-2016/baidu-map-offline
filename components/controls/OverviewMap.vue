@@ -4,7 +4,7 @@ import commonMixin from '../base/mixins/common.js'
 import bindEvents from '../base/bindEvent.js'
 
 export default {
-  name: 'bm-overview-map',
+  name: 'bm-offline-overview-map',
   mixins: [commonMixin('control')],
   render () {},
   props: {

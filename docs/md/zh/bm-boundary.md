@@ -2,7 +2,7 @@
 
 # 行政区划
 
-`BmBoundary` 组件继承于 `bm-polygon` 组件，视图由 `bm-polygon` 组件进行渲染。
+`BmBoundary` 组件继承于 `bm-offline-polygon` 组件，视图由 `bm-offline-polygon` 组件进行渲染。
 
 ## 属性
 
@@ -38,14 +38,14 @@
 
 ```html
 <baidu-map-offline class="map" :center="{lng: 116.403765, lat: 39.914850}" :zoom="11">
-  <bm-boundary name="北京市海淀区" :strokeWeight="2" strokeColor="blue"></bm-boundary>
+  <bm-offline-boundary name="北京市海淀区" :strokeWeight="2" strokeColor="blue"></bm-offline-boundary>
 </baidu-map-offline>
 ```
 
 #### 预览
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 109.49384, lat: 26.84204}" :zoom="11">
-    <bm-boundary :name="name" :strokeWeight="2" strokeColor="blue"></bm-boundary>
+    <bm-offline-boundary :name="name" :strokeWeight="2" strokeColor="blue"></bm-offline-boundary>
   </baidu-map-offline>
   <md-table>
     <md-table-header>

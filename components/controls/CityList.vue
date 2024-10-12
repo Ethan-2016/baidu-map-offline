@@ -3,7 +3,7 @@ import commonMixin from '../base/mixins/common.js'
 import {createSize} from '../base/factory.js'
 
 export default {
-  name: 'bm-city-list',
+  name: 'bm-offline-city-list',
   render () {},
   mixins: [commonMixin('control')],
   props: {

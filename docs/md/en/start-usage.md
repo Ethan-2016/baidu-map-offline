@@ -18,12 +18,12 @@ Vue.use(BaiduMapOffline, {
 
 ```html
 <template>
-  <baidu-map-offline class="bm-view">
+  <baidu-map-offline class="bm-offline-view">
   </baidu-map-offline>
 </template>
 
 <style>
-.bm-view {
+.bm-offline-view {
   width: 100%;
   height: 300px;
 }
@@ -38,7 +38,7 @@ As ES module can't be run directly in most browsers, if importing component caus
 
 ```html
 <template>
-  <baidu-map-offline class="bm-view" ak="YOUR_APP_KEY">
+  <baidu-map-offline class="bm-offline-view" ak="YOUR_APP_KEY">
   </baidu-map-offline>
 </template>
 
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style>
-.bm-view {
+.bm-offline-view {
   width: 100%;
   height: 300px;
 }

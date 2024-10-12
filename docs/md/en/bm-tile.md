@@ -21,10 +21,10 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 116.332782, lat: 40.007978}" :zoom="16">
-    <bm-tile
+    <bm-offline-tile
       :isTransparentPng="true"
       tileUrlTemplate="//developer.baidu.com/map/jsdemo/demo/tiles/{Z}/tile{X}_{Y}.png">
-    </bm-tile>
+    </bm-offline-tile>
   </baidu-map-offline>
 </template>
 ```
@@ -33,8 +33,8 @@
 
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.332782, lat: 40.007978}" :zoom="16">
-    <bm-tile
+    <bm-offline-tile
       :isTransparentPng="true"
-      tileUrlTemplate="//developer.baidu.com/map/jsdemo/demo/tiles/{Z}/tile{X}_{Y}.png"/></bm-tile>
+      tileUrlTemplate="//developer.baidu.com/map/jsdemo/demo/tiles/{Z}/tile{X}_{Y}.png"/></bm-offline-tile>
   </baidu-map-offline>
 </doc-preview>

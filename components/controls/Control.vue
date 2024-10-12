@@ -9,7 +9,7 @@ import commonMixin from '../base/mixins/common.js'
 import {createSize} from '../base/factory.js'
 
 export default {
-  name: 'bm-control',
+  name: 'bm-offline-control',
   mixins: [commonMixin('control')],
   props: ['anchor', 'offset'],
   watch: {

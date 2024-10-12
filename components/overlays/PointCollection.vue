@@ -5,7 +5,7 @@ import {createPoint} from '../base/factory.js'
 
 export default {
   render () {},
-  name: 'bm-point-collection',
+  name: 'bm-offline-point-collection',
   mixins: [commonMixin('overlay')],
   props: {
     points: {

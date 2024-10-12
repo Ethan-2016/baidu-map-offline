@@ -4,7 +4,7 @@ import bindEvents from '../base/bindEvent.js'
 import {createIcon, createSize} from '../base/factory.js'
 
 export default {
-  name: 'bm-geolocation',
+  name: 'bm-offline-geolocation',
   render () {},
   mixins: [commonMixin('control')],
   props: {

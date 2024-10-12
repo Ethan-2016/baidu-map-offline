@@ -11,7 +11,7 @@ import commonMixin from '../base/mixins/common.js'
 import bindEvents from '../base/bindEvent.js'
 
 export default {
-  name: 'bm-autocomplete',
+  name: 'bm-offline-autocomplete',
   mixins: [commonMixin()],
   props: {
     types: {

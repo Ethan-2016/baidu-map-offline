@@ -42,7 +42,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-circle :center="circlePath.center" :radius="circlePath.radius" stroke-color="blue" :stroke-opacity="0.5" :stroke-weight="2" @lineupdate="updateCirclePath" :editing="true"></bm-circle>
+    <bm-offline-circle :center="circlePath.center" :radius="circlePath.radius" stroke-color="blue" :stroke-opacity="0.5" :stroke-weight="2" @lineupdate="updateCirclePath" :editing="true"></bm-offline-circle>
   </baidu-map-offline>
 </template>
 
@@ -73,7 +73,7 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-circle :center="circlePath.center" :radius="circlePath.radius" @lineupdate="updateCirclePath" :editing="true"></bm-circle>
+    <bm-offline-circle :center="circlePath.center" :radius="circlePath.radius" @lineupdate="updateCirclePath" :editing="true"></bm-offline-circle>
   </baidu-map-offline>
   <md-table>
     <md-table-header>

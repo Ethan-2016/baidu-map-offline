@@ -20,11 +20,11 @@
 ```html
 <template>
   <baidu-map-offline class="map" :zoom="zoom" :center="{lng: 116.404, lat: 39.915}">
-    <bm-control>
+    <bm-offline-control>
       <button @click="addZoom(19)">缩放至最大</button>
       <button @click="addZoom(10)">还原</button>
       <button @click="addZoom(3)">缩放至最小</button>
-    </bm-control>
+    </bm-offline-control>
   </baidu-map-offline>
 </template>
 
@@ -48,11 +48,11 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :zoom="zoom" :center="{lng: 116.404, lat: 39.915}">
-    <bm-control>
+    <bm-offline-control>
       <md-button class="md-raised" @click="addZoom(19)">缩放至最大</md-button>
       <md-button class="md-raised" @click="addZoom(10)">还原</md-button>
       <md-button class="md-raised" @click="addZoom(3)">缩放至最小</md-button>
-    </bm-control>
+    </bm-offline-control>
   </baidu-map-offline>
 </doc-preview>
 
@@ -63,9 +63,9 @@ export default {
 ```html
 <template>
   <baidu-map-offline class="map" :zoom="zoom" :center="{lng: 116.404, lat: 39.915}" @ready="setDistanceToolInstance">
-    <bm-control>
+    <bm-offline-control>
       <button @click="openDistanceTool">开启测距</button>
-    </bm-control>
+    </bm-offline-control>
   </baidu-map-offline>
 </template>
 
@@ -93,11 +93,11 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :zoom="zoom" :center="{lng: 116.404, lat: 39.915}" @ready="setDistanceToolInstance">
-    <bm-control>
+    <bm-offline-control>
       <md-button class="md-raised md-primary" @click="openDistanceTool">
         开启测距
       </md-button>
-    </bm-control>
+    </bm-offline-control>
   </baidu-map-offline>
 </doc-preview>
 

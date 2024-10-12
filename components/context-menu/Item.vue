@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'bm-context-menu-item',
+  name: 'bm-offline-context-menu-item',
   props: {
     callback: {
       type: Function,

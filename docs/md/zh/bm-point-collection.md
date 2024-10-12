@@ -30,7 +30,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 105.000, lat: 38.000}" :zoom="4">
-    <bm-point-collection :points="points" shape="BMAP_POINT_SHAPE_STAR" color="red" size="BMAP_POINT_SIZE_SMALL" @click="clickHandler"></bm-point-collection>
+    <bm-offline-point-collection :points="points" shape="BMAP_POINT_SHAPE_STAR" color="red" size="BMAP_POINT_SIZE_SMALL" @click="clickHandler"></bm-offline-point-collection>
   </baidu-map-offline>
 </template>
 
@@ -62,7 +62,7 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" @ready="addPoints" :center="{lng: 105.000, lat: 38.000}" :zoom="4">
-    <bm-point-collection :points="points" shape="BMAP_POINT_SHAPE_STAR" color="red" size="BMAP_POINT_SIZE_SMALL" @click="clickHandler"></bm-point-collection>
+    <bm-offline-point-collection :points="points" shape="BMAP_POINT_SHAPE_STAR" color="red" size="BMAP_POINT_SIZE_SMALL" @click="clickHandler"></bm-offline-point-collection>
   </baidu-map-offline>
 </doc-preview>
 </template>

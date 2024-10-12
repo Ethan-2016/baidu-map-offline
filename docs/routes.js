@@ -108,8 +108,8 @@ const routeMap = [
         }
       },
       {
-        path: 'bm-view',
-        component: 'bm-view',
+        path: 'bm-offline-view',
+        component: 'bm-offline-view',
         name: {
           zh: '地图视图',
           en: 'Map View'
@@ -127,7 +127,7 @@ const routeMap = [
     children: [
       {
         path: 'scale',
-        component: 'bm-scale',
+        component: 'bm-offline-scale',
         name: {
           zh: '比例尺',
           en: 'Scale'
@@ -135,7 +135,7 @@ const routeMap = [
       },
       {
         path: 'navigation',
-        component: 'bm-navigation',
+        component: 'bm-offline-navigation',
         name: {
           zh: '缩放',
           en: 'Navigation'
@@ -143,7 +143,7 @@ const routeMap = [
       },
       {
         path: 'map-type',
-        component: 'bm-map-type',
+        component: 'bm-offline-map-type',
         name: {
           zh: '地图类型',
           en: 'Map Type'
@@ -151,7 +151,7 @@ const routeMap = [
       },
       {
         path: 'overview-map',
-        component: 'bm-overview-map',
+        component: 'bm-offline-overview-map',
         name: {
           zh: '缩略图',
           en: 'Overview Map'
@@ -159,7 +159,7 @@ const routeMap = [
       },
       {
         path: 'geolocation',
-        component: 'bm-geolocation',
+        component: 'bm-offline-geolocation',
         name: {
           zh: '定位',
           en: 'Geolocation'
@@ -167,7 +167,7 @@ const routeMap = [
       },
       {
         path: 'copyright',
-        component: 'bm-copyright',
+        component: 'bm-offline-copyright',
         name: {
           zh: '版权',
           en: 'Copyright'
@@ -175,7 +175,7 @@ const routeMap = [
       },
       {
         path: 'city-list',
-        component: 'bm-city-list',
+        component: 'bm-offline-city-list',
         name: {
           zh: '城市列表',
           en: 'City List'
@@ -183,7 +183,7 @@ const routeMap = [
       },
       {
         path: 'panorama',
-        component: 'bm-panorama',
+        component: 'bm-offline-panorama',
         name: {
           zh: '全景',
           en: 'Panorama'
@@ -191,7 +191,7 @@ const routeMap = [
       },
       {
         path: 'control',
-        component: 'bm-control',
+        component: 'bm-offline-control',
         name: {
           zh: '自定义控件',
           en: 'Custom Control'
@@ -209,7 +209,7 @@ const routeMap = [
     children: [
       {
         path: 'marker',
-        component: 'bm-marker',
+        component: 'bm-offline-marker',
         name: {
           zh: '点',
           en: 'Marker'
@@ -217,7 +217,7 @@ const routeMap = [
       },
       {
         path: 'point-collection',
-        component: 'bm-point-collection',
+        component: 'bm-offline-point-collection',
         name: {
           zh: '海量点',
           en: 'Point Collection'
@@ -225,7 +225,7 @@ const routeMap = [
       },
       {
         path: 'polyline',
-        component: 'bm-polyline',
+        component: 'bm-offline-polyline',
         name: {
           zh: '折线',
           en: 'Polyline'
@@ -233,7 +233,7 @@ const routeMap = [
       },
       {
         path: 'polygon',
-        component: 'bm-polygon',
+        component: 'bm-offline-polygon',
         name: {
           zh: '多边形',
           en: 'Polygon'
@@ -241,7 +241,7 @@ const routeMap = [
       },
       {
         path: 'circle',
-        component: 'bm-circle',
+        component: 'bm-offline-circle',
         name: {
           zh: '圆形',
           en: 'Circle'
@@ -249,7 +249,7 @@ const routeMap = [
       },
       {
         path: 'ground',
-        component: 'bm-ground',
+        component: 'bm-offline-ground',
         name: {
           zh: '地面',
           en: 'Ground'
@@ -257,7 +257,7 @@ const routeMap = [
       },
       {
         path: 'label',
-        component: 'bm-label',
+        component: 'bm-offline-label',
         name: {
           zh: '标签',
           en: 'Label'
@@ -265,7 +265,7 @@ const routeMap = [
       },
       {
         path: 'info-window',
-        component: 'bm-info-window',
+        component: 'bm-offline-info-window',
         name: {
           zh: '信息窗体',
           en: 'Info Window'
@@ -273,7 +273,7 @@ const routeMap = [
       },
       {
         path: 'overlay',
-        component: 'bm-overlay',
+        component: 'bm-offline-overlay',
         name: {
           zh: '自定义覆盖物',
           en: 'Custom Overlay'
@@ -291,7 +291,7 @@ const routeMap = [
     children: [
       {
         path: 'tile',
-        component: 'bm-tile',
+        component: 'bm-offline-tile',
         name: {
           zh: '瓦片图层',
           en: 'Tile'
@@ -299,7 +299,7 @@ const routeMap = [
       },
       {
         path: 'traffic',
-        component: 'bm-traffic',
+        component: 'bm-offline-traffic',
         name: {
           zh: '交通流量图层',
           en: 'Traffic'
@@ -317,7 +317,7 @@ const routeMap = [
     children: [
       {
         path: 'local-search',
-        component: 'bm-local-search',
+        component: 'bm-offline-local-search',
         name: {
           zh: '地区检索',
           en: 'Local Search'
@@ -325,7 +325,7 @@ const routeMap = [
       },
       {
         path: 'transit',
-        component: 'bm-transit',
+        component: 'bm-offline-transit',
         name: {
           zh: '公交路线规划',
           en: 'Transit'
@@ -333,7 +333,7 @@ const routeMap = [
       },
       {
         path: 'walking',
-        component: 'bm-walking',
+        component: 'bm-offline-walking',
         name: {
           zh: '步行路线规划',
           en: 'Walking'
@@ -341,7 +341,7 @@ const routeMap = [
       },
       {
         path: 'driving',
-        component: 'bm-driving',
+        component: 'bm-offline-driving',
         name: {
           zh: '驾车路线规划',
           en: 'Driving'
@@ -349,7 +349,7 @@ const routeMap = [
       },
       {
         path: 'bus',
-        component: 'bm-bus',
+        component: 'bm-offline-bus',
         name: {
           zh: '公交路线检索',
           en: 'Bus'
@@ -367,7 +367,7 @@ const routeMap = [
     children: [
       {
         path: 'menu',
-        component: 'bm-context-menu',
+        component: 'bm-offline-context-menu',
         name: {
           zh: '菜单',
           en: 'Menu'
@@ -375,7 +375,7 @@ const routeMap = [
       },
       {
         path: 'item',
-        component: 'bm-context-menu-item',
+        component: 'bm-offline-context-menu-item',
         name: {
           zh: '菜单项',
           en: 'Menu Item'
@@ -397,7 +397,7 @@ const routeMap = [
           zh: '行政区划',
           en: 'Boundary'
         },
-        component: 'bm-boundary'
+        component: 'bm-offline-boundary'
       },
       {
         path: 'auto-complete',
@@ -405,7 +405,7 @@ const routeMap = [
           zh: '自动填充',
           en: 'Auto Complete'
         },
-        component: 'bm-auto-complete'
+        component: 'bm-offline-auto-complete'
       }
     ]
   },

@@ -26,10 +26,10 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="center" :zoom="zoom">
-    <bm-context-menu>
-      <bm-context-menu-item :callback="gotoBeijing" text="去北京"></bm-context-menu-item>
-      <bm-context-menu-item :callback="gotoShanghai" text="去上海"></bm-context-menu-item>
-    </bm-context-menu>
+    <bm-offline-context-menu>
+      <bm-offline-context-menu-item :callback="gotoBeijing" text="去北京"></bm-offline-context-menu-item>
+      <bm-offline-context-menu-item :callback="gotoShanghai" text="去上海"></bm-offline-context-menu-item>
+    </bm-offline-context-menu>
   </baidu-map-offline>
 </template>
 
@@ -66,10 +66,10 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :center="center" :zoom="zoom">
-    <bm-context-menu>
-      <bm-context-menu-item :callback="gotoBeijing" text="去北京"></bm-context-menu-item>
-      <bm-context-menu-item :callback="gotoShanghai" text="去上海"></bm-context-menu-item>
-    </bm-context-menu>
+    <bm-offline-context-menu>
+      <bm-offline-context-menu-item :callback="gotoBeijing" text="去北京"></bm-offline-context-menu-item>
+      <bm-offline-context-menu-item :callback="gotoShanghai" text="去上海"></bm-offline-context-menu-item>
+    </bm-offline-context-menu>
   </baidu-map-offline>
 </doc-preview>
 
@@ -80,11 +80,11 @@ export default {
 ```html
 <template>
   <baidu-map-offline class="map" :center="center" :zoom="zoom">
-    <bm-marker :position="{lng: 116.404, lat: 39.915}" :dragging="true">
-      <bm-context-menu>
-        <bm-context-menu-item :callback="getPosition" text="获取坐标"></bm-context-menu-item>
-      </bm-context-menu>
-    </bm-marker>
+    <bm-offline-marker :position="{lng: 116.404, lat: 39.915}" :dragging="true">
+      <bm-offline-context-menu>
+        <bm-offline-context-menu-item :callback="getPosition" text="获取坐标"></bm-offline-context-menu-item>
+      </bm-offline-context-menu>
+    </bm-offline-marker>
   </baidu-map-offline>
 </template>
 
@@ -112,11 +112,11 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :center="center" :zoom="zoom">
-    <bm-marker :position="{lng: 116.404, lat: 39.915}" :dragging="true">
-      <bm-context-menu>
-        <bm-context-menu-item :callback="getPosition" text="获取坐标"></bm-context-menu-item>
-      </bm-context-menu>
-    </bm-marker>
+    <bm-offline-marker :position="{lng: 116.404, lat: 39.915}" :dragging="true">
+      <bm-offline-context-menu>
+        <bm-offline-context-menu-item :callback="getPosition" text="获取坐标"></bm-offline-context-menu-item>
+      </bm-offline-context-menu>
+    </bm-offline-marker>
   </baidu-map-offline>
 </doc-preview>
 </template>

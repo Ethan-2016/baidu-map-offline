@@ -37,7 +37,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-label content="Tiananmen" :position="{lng: 116.404, lat: 39.915}" :labelStyle="{color: 'red', fontSize : '24px'}" title="Hover me"/>
+    <bm-offline-label content="Tiananmen" :position="{lng: 116.404, lat: 39.915}" :labelStyle="{color: 'red', fontSize : '24px'}" title="Hover me"/>
   </baidu-map-offline>
 </template>
 ```
@@ -45,7 +45,7 @@
 #### Preview
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-label content="Tiananmen" :position="{lng: 116.404, lat: 39.915}" :labelStyle="labelStyle" title="Hover me"/>
+    <bm-offline-label content="Tiananmen" :position="{lng: 116.404, lat: 39.915}" :labelStyle="labelStyle" title="Hover me"/>
   </baidu-map-offline>
 </doc-preview>
 </template>

@@ -19,10 +19,10 @@
 ```html
 <template>
   <baidu-map-offline class="map" center="北京" :zoom="3">
-    <bm-copyright
+    <bm-offline-copyright
       anchor="BMAP_ANCHOR_TOP_RIGHT"
       :copyright="[{id: 1, content: 'Copyright Message', bounds: {ne: {lng: 110, lat: 40}, sw:{lng: 0, lat: 0}}}, {id: 2, content: '<a>Copyright message.</a>'}]">
-    </bm-copyright>
+    </bm-offline-copyright>
   </baidu-map-offline>
 </template>
 ```
@@ -31,9 +31,9 @@
 
 <doc-preview>
   <baidu-map-offline class="map" center="北京" :zoom="3">
-    <bm-copyright
+    <bm-offline-copyright
       anchor="BMAP_ANCHOR_TOP_RIGHT"
       :copyright="[{id: 1, content: 'Copyright Message', bounds: {ne: {lng: 110, lat: 40}, sw:{lng: 0, lat: 0}}}, {id: 2, content: '<a>Copyright meessage</a>'}]">
-    </bm-copyright>
+    </bm-offline-copyright>
   </baidu-map-offline>
 </doc-preview>

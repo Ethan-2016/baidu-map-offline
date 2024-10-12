@@ -4,7 +4,7 @@ import bindEvents from '../base/bindEvent.js'
 import {createBounds} from '../base/factory.js'
 
 export default {
-  name: 'bm-ground',
+  name: 'bm-offline-ground',
   render () {},
   mixins: [commonMixin('overlay')],
   props: {

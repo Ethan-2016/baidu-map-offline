@@ -1,5 +1,5 @@
 export default {
-  'bm-map': [
+  'bm-offline-map': [
     'click',
     'dblclick',
     'rightclick',
@@ -34,15 +34,15 @@ export default {
     'touchend',
     'longpress'
   ],
-  'bm-geolocation': [
+  'bm-offline-geolocation': [
     'locationSuccess',
     'locationError'
   ],
-  'bm-overview-map': [
+  'bm-offline-overview-map': [
     'viewchanged',
     'viewchanging'
   ],
-  'bm-marker': [
+  'bm-offline-marker': [
     'click',
     'dblclick',
     'mousedown',
@@ -57,7 +57,7 @@ export default {
     'dragend',
     'rightclick'
   ],
-  'bm-polyline': [
+  'bm-offline-polyline': [
     'click',
     'dblclick',
     'mousedown',
@@ -67,7 +67,7 @@ export default {
     'remove',
     'lineupdate'
   ],
-  'bm-polygon': [
+  'bm-offline-polygon': [
     'click',
     'dblclick',
     'mousedown',
@@ -77,7 +77,7 @@ export default {
     'remove',
     'lineupdate'
   ],
-  'bm-circle': [
+  'bm-offline-circle': [
     'click',
     'dblclick',
     'mousedown',
@@ -87,7 +87,7 @@ export default {
     'remove',
     'lineupdate'
   ],
-  'bm-label': [
+  'bm-offline-label': [
     'click',
     'dblclick',
     'mousedown',
@@ -97,22 +97,22 @@ export default {
     'remove',
     'rightclick'
   ],
-  'bm-info-window': [
+  'bm-offline-info-window': [
     'close',
     'open',
     'maximize',
     'restore',
     'clickclose'
   ],
-  'bm-ground': [
+  'bm-offline-ground': [
     'click',
     'dblclick'
   ],
-  'bm-autocomplete': [
+  'bm-offline-autocomplete': [
     'onconfirm',
     'onhighlight'
   ],
-  'bm-point-collection': [
+  'bm-offline-point-collection': [
     'click',
     'mouseover',
     'mouseout'

@@ -3,7 +3,7 @@ import commonMixin from '../base/mixins/common.js'
 import {createSize} from '../base/factory.js'
 
 export default {
-  name: 'bm-scale',
+  name: 'bm-offline-scale',
   render () {},
   mixins: [commonMixin('control')],
   props: {

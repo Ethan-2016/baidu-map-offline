@@ -10,7 +10,7 @@ import bindEvents from '../base/bindEvent.js'
 import {createLabel, createIcon, createPoint} from '../base/factory.js'
 
 export default {
-  name: 'bm-marker',
+  name: 'bm-offline-marker',
   mixins: [commonMixin('overlay')],
   props: {
     position: {},

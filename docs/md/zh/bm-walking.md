@@ -34,9 +34,9 @@
 ```html
 <template>
 <baidu-map-offline>
-  <bm-view class="map">
-  </bm-view>
-  <bm-walking start="百度大厦" end="北京邮电大学西门" :auto-viewport="true" location="北京"></bm-walking>
+  <bm-offline-view class="map">
+  </bm-offline-view>
+  <bm-offline-walking start="百度大厦" end="北京邮电大学西门" :auto-viewport="true" location="北京"></bm-offline-walking>
 </baidu-map-offline>
 </template>
 ```
@@ -44,9 +44,9 @@
 #### 预览
 <doc-preview>
 <baidu-map-offline>
-  <bm-view class="map">
-  </bm-view>
-  <bm-walking start="百度大厦" end="北京邮电大学西门" :auto-viewport="true" location="北京"></bm-walking>
+  <bm-offline-view class="map">
+  </bm-offline-view>
+  <bm-offline-walking start="百度大厦" end="北京邮电大学西门" :auto-viewport="true" location="北京"></bm-offline-walking>
 </baidu-map-offline>
 </doc-preview>
 </template>

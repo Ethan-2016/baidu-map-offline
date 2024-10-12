@@ -39,8 +39,8 @@
   <label>关键词：<input v-model="keyword"></label>
   <label>地区：<input v-model="location"></label>
   <baidu-map-offline>
-    <bm-view class="map"></bm-view>
-    <bm-local-search :keyword="keyword" :auto-viewport="true" :location="location"></bm-local-search>
+    <bm-offline-view class="map"></bm-offline-view>
+    <bm-offline-local-search :keyword="keyword" :auto-viewport="true" :location="location"></bm-offline-local-search>
   </baidu-map-offline>
 </template>
 
@@ -62,8 +62,8 @@ export default {
 
 <doc-preview>
 <baidu-map-offline>
-  <bm-view class="map">
-  </bm-view>
+  <bm-offline-view class="map">
+  </bm-offline-view>
   <md-table>
     <md-table-header>
       <md-table-head>关键词</md-table-head>
@@ -84,7 +84,7 @@ export default {
       </md-table-row>
     </md-table-body>
   </md-table>
-  <bm-local-search :keyword="keyword" :auto-viewport="true" :location="location"></bm-local-search>
+  <bm-offline-local-search :keyword="keyword" :auto-viewport="true" :location="location"></bm-offline-local-search>
 </doc-preview>
 </baidu-map-offline>
 
@@ -96,9 +96,9 @@ export default {
 ```html
 <template>
   <baidu-map-offline>
-    <bm-view class="map"></bm-view>
-    <bm-local-search keyword="银行" :bounds="bounds" :auto-viewport="true" :panel="false"></bm-local-search>
-    <bm-polygon :path="polygonPath"></bm-polygon>
+    <bm-offline-view class="map"></bm-offline-view>
+    <bm-offline-local-search keyword="银行" :bounds="bounds" :auto-viewport="true" :panel="false"></bm-offline-local-search>
+    <bm-offline-polygon :path="polygonPath"></bm-offline-polygon>
   </baidu-map-offline>
 </template>
 
@@ -142,9 +142,9 @@ export default {
 
 <doc-preview>
   <baidu-map-offline :center="{lng: 116.274625, lat: 39.961627}" :zoom="11">
-    <bm-view class="map"></bm-view>
-    <bm-local-search keyword="银行" :bounds="bounds" :auto-viewport="true" :panel="false"></bm-local-search>
-    <bm-polygon :path="polygonPath"></bm-polygon>
+    <bm-offline-view class="map"></bm-offline-view>
+    <bm-offline-local-search keyword="银行" :bounds="bounds" :auto-viewport="true" :panel="false"></bm-offline-local-search>
+    <bm-offline-polygon :path="polygonPath"></bm-offline-polygon>
   </baidu-map-offline>
 </doc-preview>
 
@@ -156,9 +156,9 @@ export default {
 ```html
 <template>
   <baidu-map-offline>
-    <bm-view class="map"></bm-view>
-    <bm-local-search keyword="餐馆" :nearby="nearby" :auto-viewport="true" :panel="false"></bm-local-search>
-    <bm-circle :center="nearby.center" :radius="nearby.radius"></bm-circle>
+    <bm-offline-view class="map"></bm-offline-view>
+    <bm-offline-local-search keyword="餐馆" :nearby="nearby" :auto-viewport="true" :panel="false"></bm-offline-local-search>
+    <bm-offline-circle :center="nearby.center" :radius="nearby.radius"></bm-offline-circle>
   </baidu-map-offline>
 </template>
 
@@ -183,9 +183,9 @@ export default {
 
 <doc-preview>
   <baidu-map-offline :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-view class="map"></bm-view>
-    <bm-local-search keyword="餐馆" :nearby="nearby" :auto-viewport="true" :panel="false"></bm-local-search>
-    <bm-circle :center="nearby.center" :radius="nearby.radius"></bm-circle>
+    <bm-offline-view class="map"></bm-offline-view>
+    <bm-offline-local-search keyword="餐馆" :nearby="nearby" :auto-viewport="true" :panel="false"></bm-offline-local-search>
+    <bm-offline-circle :center="nearby.center" :radius="nearby.radius"></bm-offline-circle>
   </baidu-map-offline>
 </doc-preview>
 

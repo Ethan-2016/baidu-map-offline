@@ -1,6 +1,6 @@
 <template>
   <div v-if="paths.length">
-    <bm-polygon
+    <bm-offline-polygon
       v-for="(path, index) of paths"
       :key="index"
       :path="path"

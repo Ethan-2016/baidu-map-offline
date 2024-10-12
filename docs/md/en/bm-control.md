@@ -20,11 +20,11 @@ Due to the mouse wheel scaling featrue of Baidu Map, scrolling a DOM element wit
 ```html
 <template>
   <baidu-map-offline class="map" :zoom="zoom" :center="{lng: 116.404, lat: 39.915}">
-    <bm-control>
+    <bm-offline-control>
       <button @click="addZoom(19)">Zoom Max</button>
       <button @click="addZoom(10)">Reset</button>
       <button @click="addZoom(3)">Zoom Min</button>
-    </bm-control>
+    </bm-offline-control>
   </baidu-map-offline>
 </template>
 
@@ -48,11 +48,11 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :zoom="zoom" :center="{lng: 116.404, lat: 39.915}">
-    <bm-control>
+    <bm-offline-control>
       <md-button class="md-raised" @click="addZoom(19)">Zoom Max</md-button>
       <md-button class="md-raised" @click="addZoom(10)">Reset</md-button>
       <md-button class="md-raised" @click="addZoom(3)">Zoom Min</md-button>
-    </bm-control>
+    </bm-offline-control>
   </baidu-map-offline>
 </doc-preview>
 
@@ -63,9 +63,9 @@ export default {
 ```html
 <template>
   <baidu-map-offline class="map" :zoom="zoom" :center="{lng: 116.404, lat: 39.915}" @ready="setDistanceToolInstance">
-    <bm-control>
+    <bm-offline-control>
       <button @click="openDistanceTool">Open Instance Tool</button>
-    </bm-control>
+    </bm-offline-control>
   </baidu-map-offline>
 </template>
 
@@ -93,11 +93,11 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :zoom="zoom" :center="{lng: 116.404, lat: 39.915}" @ready="setDistanceToolInstance">
-    <bm-control>
+    <bm-offline-control>
       <md-button class="md-raised md-primary" @click="openDistanceTool">
         Open Instance Tool
       </md-button>
-    </bm-control>
+    </bm-offline-control>
   </baidu-map-offline>
 </doc-preview>
 

@@ -18,7 +18,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" center="北京">
-    <bm-panorama></bm-panorama>
+    <bm-offline-panorama></bm-offline-panorama>
   </baidu-map-offline>
 </template>
 ```
@@ -26,6 +26,6 @@
 #### Preview
 <doc-preview>
   <baidu-map-offline class="map" center="北京">
-    <bm-panorama></bm-panorama>
+    <bm-offline-panorama></bm-offline-panorama>
   </baidu-map-offline>
 </doc-preview>

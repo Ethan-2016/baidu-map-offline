@@ -39,10 +39,10 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-info-window :position="{lng: 116.404, lat: 39.915}" title="Info Window Title" :show="infoWindow.show" @close="infoWindowClose" @open="infoWindowOpen">
+    <bm-offline-info-window :position="{lng: 116.404, lat: 39.915}" title="Info Window Title" :show="infoWindow.show" @close="infoWindowClose" @open="infoWindowOpen">
       <p v-text="infoWindow.contents"></p>
       <button @click="clear">Clear</button>
-    </bm-info-window>
+    </bm-offline-info-window>
   </baidu-map-offline>
 </template>
 
@@ -74,10 +74,10 @@ export default {
 #### 预览
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-info-window :position="{lng: 116.404, lat: 39.915}" title="Info Window Title" :show="infoWindow.show" @close="infoWindowClose" @open="infoWindowOpen">
+    <bm-offline-info-window :position="{lng: 116.404, lat: 39.915}" title="Info Window Title" :show="infoWindow.show" @close="infoWindowClose" @open="infoWindowOpen">
       <p v-text="infoWindow.contents"></p>
       <button @click="clear">Clear</button>
-    </bm-info-window>
+    </bm-offline-info-window>
   </baidu-map-offline>
   <md-table>
     <md-table-header>

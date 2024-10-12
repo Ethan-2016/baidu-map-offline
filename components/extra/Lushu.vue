@@ -5,7 +5,7 @@ import {createIcon} from '../base/factory.js'
 import Lushu from 'BMaplib.lushu'
 
 export default {
-  name: 'bm-lushu',
+  name: 'bm-offline-lushu',
   render (h) {},
   mixins: [commonMixin('lushu')],
   props: {

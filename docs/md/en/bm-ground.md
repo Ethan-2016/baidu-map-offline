@@ -31,9 +31,9 @@
 ```html
 <template>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="15">
-    <bm-ground
+    <bm-offline-ground
       :bounds="{ne: {lng: 110, lat: 40}, sw:{lng: 0, lat: 0}}" imageURL="http://dafrok.github.io/vue-baidu-map-offline/favicon.png">
-    </bm-ground>
+    </bm-offline-ground>
   </baidu-map-offline>
 </template>
 
@@ -51,13 +51,13 @@ export default {
 
 <doc-preview>
   <baidu-map-offline class="map" :center="{lng: 116.404, lat: 39.915}" :zoom="12">
-    <bm-ground
+    <bm-offline-ground
       :bounds="bounds"
       imageURL="//developer.baidu.com/map/jsdemo/img/si-huan.png"
       :opacity="1"
       :displayOnMinLevel="10"
       :displayOnMaxLevel="14">
-    </bm-ground>
+    </bm-offline-ground>
   </baidu-map-offline>
 </doc-preview>
 </template>

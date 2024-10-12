@@ -4,7 +4,7 @@ import bindEvents from '../base/bindEvent.js'
 import {createPoint} from '../base/factory.js'
 
 export default {
-  name: 'bm-polygon',
+  name: 'bm-offline-polygon',
   render () {},
   mixins: [commonMixin('overlay')],
   props: {

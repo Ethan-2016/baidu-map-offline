@@ -3,7 +3,7 @@ import commonMixin from '../base/mixins/common.js'
 import {createBounds} from '../base/factory.js'
 
 export default {
-  name: 'bm-tile',
+  name: 'bm-offline-tile',
   render (h) {},
   mixins: [commonMixin('layer')],
   props: {

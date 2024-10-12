@@ -17,10 +17,10 @@ Due to the features of MVVM, painting in the map no longer needs to be implement
   @mousemove="syncPolyline"
   @click="paintPolyline"
   @rightclick="newPolyline">
-  <bm-control>
+  <bm-offline-control>
     <button @click="toggle('polyline')">{{ polyline.editing ? 'STOP' : 'START' }}</button>
-  </bm-control>
-  <bm-polyline :path="path" v-for="path of polyline.paths"></bm-polyline>
+  </bm-offline-control>
+  <bm-offline-polyline :path="path" v-for="path of polyline.paths"></bm-offline-polyline>
 </baidu-map-offline>
 
 <script>
@@ -89,10 +89,10 @@ export default {
   @mousemove="syncPolyline"
   @click="paintPolyline"
   @rightclick="newPolyline">
-  <bm-control>
+  <bm-offline-control>
     <md-button class="md-raised md-primary" @click="toggle('polyline')">{{ polyline.editing ? 'STOP' : 'START' }}</md-button>
-  </bm-control>
-  <bm-polyline :path="path" v-for="path of polyline.paths"></bm-polyline>
+  </bm-offline-control>
+  <bm-offline-polyline :path="path" v-for="path of polyline.paths"></bm-offline-polyline>
 </baidu-map-offline>
 
 <script>

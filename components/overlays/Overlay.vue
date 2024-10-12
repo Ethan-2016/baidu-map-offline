@@ -8,7 +8,7 @@
 import commonMixin from '../base/mixins/common.js'
 
 export default {
-  name: 'bm-overlay',
+  name: 'bm-offline-overlay',
   mixins: [commonMixin('overlay')],
   props: {
     pane: {

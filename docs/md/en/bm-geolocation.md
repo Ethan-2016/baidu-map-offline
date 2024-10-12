@@ -28,7 +28,7 @@
 ```html
 <template>
   <baidu-map-offline class="map" center="北京">
-    <bm-geolocation anchor="BMAP_ANCHOR_BOTTOM_RIGHT" :showAddressBar="true" :autoLocation="true"></bm-geolocation>
+    <bm-offline-geolocation anchor="BMAP_ANCHOR_BOTTOM_RIGHT" :showAddressBar="true" :autoLocation="true"></bm-offline-geolocation>
   </baidu-map-offline>
 </template>
 ```
@@ -37,6 +37,6 @@
 
 <doc-preview>
   <baidu-map-offline class="map" center="北京">
-    <bm-geolocation anchor="BMAP_ANCHOR_BOTTOM_RIGHT" :showAddressBar="true" :autoLocation="true"></bm-geolocation>
+    <bm-offline-geolocation anchor="BMAP_ANCHOR_BOTTOM_RIGHT" :showAddressBar="true" :autoLocation="true"></bm-offline-geolocation>
   </baidu-map-offline>
 </doc-preview>

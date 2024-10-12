@@ -3,7 +3,7 @@ import commonMixin from '../base/mixins/common.js'
 import {createSize} from '../base/factory.js'
 
 export default {
-  name: 'bm-panorama',
+  name: 'bm-offline-panorama',
   mixins: [commonMixin('control')],
   render () {},
   props: ['anchor', 'offset'],
