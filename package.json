@@ -1,5 +1,5 @@
 {
-  "name": "vue-baidu-map-offline",
+  "name": "bmap-offline",
   "version": "1.0.0",
   "description": "Baidu Map Offline Component for Vue 2.0",
   "main": "index.js",
@@ -22,10 +22,9 @@
     "url": "git+https://github.com/Ethan-2016/baidu-map-offline.git"
   },
   "keywords": [
-    "vue",
-    "baidu-map-offline",
+    "bmap-offline",
     "bmap",
-    "vue-baidu-map-offline",
+    "bmap-offline",
     "baidu",
     "map"
   ],
