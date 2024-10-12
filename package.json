@@ -1,7 +1,7 @@
 {
-  "name": "bmap-offline",
-  "version": "1.0.2",
-  "description": "Baidu Map Offline Component for Vue 2.0",
+  "name": "baidu-map-offline",
+  "version": "1.0.3",
+  "description": "基于vue-baidu-map 改造  当前在开发中，尚未完善",
   "main": "index.js",
   "directories": {
     "doc": "docs",
@@ -26,7 +26,9 @@
     "bmap",
     "bmap-offline",
     "baidu",
-    "map"
+    "map",
+    "百度地图",
+    "离线地图"
   ],
   "author": "Ethan-2016",
   "license": "MIT",

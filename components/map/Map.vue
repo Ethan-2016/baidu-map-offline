@@ -13,9 +13,6 @@ import {checkType} from '../base/util.js'
 export default {
   name: 'bm-map',
   props: {
-    ak: {
-      type: String
-    },
     center: {
       type: [Object, String]
     },
@@ -81,18 +78,21 @@ export default {
   watch: {
     center (val, oldVal) {
       const {map, zoom} = this
+      if (!map) return
       if (checkType(val) === 'String' && val !== oldVal) {
         map.centerAndZoom(val, zoom)
       }
     },
     'center.lng' (val, oldVal) {
       const {BMapOffline, map, zoom, center} = this
+      if (!map) return
       if (val !== oldVal && val >= -180 && val <= 180) {
         map.centerAndZoom(new BMapOffline.Point(val, center.lat), zoom)
       }
     },
     'center.lat' (val, oldVal) {
       const {BMapOffline, map, zoom, center} = this
+      if (!map) return
       if (val !== oldVal && val >= -74 && val <= 74) {
         map.centerAndZoom(new BMapOffline.Point(center.lng, val), zoom)
       }
@@ -249,18 +249,19 @@ export default {
     },
     getMapScript () {
       if (!global.BMapOffline) {
-        const ak = this.ak || this._BMapOffline().ak
+        // const ak = this.ak || this._BMapOffline().ak
         global.BMapOffline = {}
         global.BMapOffline._preloader = new Promise((resolve, reject) => {
           global._initBaiduMapOffline = function () {
             resolve(global.BMapOffline)
+            console.log(global.document.body);
             global.document.body.removeChild($script)
             global.BMapOffline._preloader = null
             global._initBaiduMapOffline = null
           }
           const $script = document.createElement('script')
-          global.document.body.appendChild($script)
-          $script.src = `https://api.map.baidu.com/api?v=2.0&ak=${ak}&callback=_initBaiduMapOffline`
+          // global.document.body.appendChild($script)
+          // $script.src = `https://api.map.baidu.com/api?v=2.0&ak=${ak}&callback=_initBaiduMapOffline`
         })
         return global.BMapOffline._preloader
       } else if (!global.BMapOffline._preloader) {
